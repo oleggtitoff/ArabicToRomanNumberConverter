@@ -13,9 +13,15 @@ public class ArabicToRomanNumberConverterTest {
     }
 
     @Test
-    public void testConverting0ToEmptyString() {
+    public void testConverting_0_To_EmptyString() {
         String romanNumber = converter.convert(0);
         Assert.assertEquals("", romanNumber);
+    }
+
+    @Test
+    public void testConverting_1_To_I() {
+        String romanNumber = converter.convert(1);
+        Assert.assertEquals("I", romanNumber);
     }
 
 }
