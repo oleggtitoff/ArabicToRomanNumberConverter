@@ -10,17 +10,11 @@ class ArabicToRomanNumberConverter {
     }
 
     String convert(int arabicNumber) {
-        if (isNotZero(arabicNumber)) {
-            while (arabicNumber > 0) {
-                romanNumber.append("I");
-                arabicNumber--;
-            }
+        while (arabicNumber > 0) {
+            romanNumber.append("I");
+            arabicNumber--;
         }
         return romanNumber.toString();
-    }
-
-    private boolean isNotZero(int number) {
-        return (number != 0);
     }
 
 }

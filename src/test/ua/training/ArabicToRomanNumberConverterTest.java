@@ -22,6 +22,11 @@ public class ArabicToRomanNumberConverterTest {
     }
 
     @Test
+    public void testConvertingNegativeValueToEmptyString() {
+        Assert.assertEquals("", convert(-1));
+    }
+
+    @Test
     public void testConverting_1_to_I() {
         Assert.assertEquals("I", convert(1));
     }
