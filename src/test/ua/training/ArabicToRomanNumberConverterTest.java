@@ -77,6 +77,11 @@ public class ArabicToRomanNumberConverterTest {
     }
 
     @Test
+    public void testConverting_400_to_CD() {
+        Assert.assertEquals("CD", convert(400));
+    }
+
+    @Test
     public void testConverting_500_to_D() {
         Assert.assertEquals("D", convert(500));
     }

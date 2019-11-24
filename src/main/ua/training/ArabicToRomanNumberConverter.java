@@ -14,6 +14,7 @@ class ArabicToRomanNumberConverter {
         digits = new LinkedHashMap<>();
         digits.put(1000, "M");
         digits.put(500, "D");
+        digits.put(400, "CD");
         digits.put(100, "C");
         digits.put(90, "XC");
         digits.put(50, "L");
