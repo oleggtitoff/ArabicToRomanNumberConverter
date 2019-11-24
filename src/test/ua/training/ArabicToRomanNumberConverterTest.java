@@ -92,6 +92,11 @@ public class ArabicToRomanNumberConverterTest {
     }
 
     @Test
+    public void testConverting_523_to_DXXIII() {
+        Assert.assertEquals("DXXIII", convert(523));
+    }
+
+    @Test
     public void testConverting_900_to_CM() {
         Assert.assertEquals("CM", convert(900));
     }
