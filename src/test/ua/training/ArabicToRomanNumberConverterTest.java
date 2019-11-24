@@ -37,6 +37,11 @@ public class ArabicToRomanNumberConverterTest {
     }
 
     @Test
+    public void testConverting_4_to_IV() {
+        Assert.assertEquals("IV", convert(4));
+    }
+
+    @Test
     public void testConverting_5_to_V() {
         Assert.assertEquals("V", convert(5));
     }
