@@ -15,6 +15,7 @@ class ArabicToRomanNumberConverter {
         digits.put(100, "C");
         digits.put(50, "L");
         digits.put(10, "X");
+        digits.put(9, "IX");
         digits.put(5, "V");
         digits.put(4, "IV");
         digits.put(1, "I");
