@@ -106,4 +106,9 @@ public class ArabicToRomanNumberConverterTest {
         Assert.assertEquals("M", convert(1000));
     }
 
+    @Test
+    public void testConverting_1994_to_MCMXCIV() {
+        Assert.assertEquals("MCMXCIV", convert(1994));
+    }
+
 }
