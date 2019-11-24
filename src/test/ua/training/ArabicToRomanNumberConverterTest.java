@@ -81,4 +81,9 @@ public class ArabicToRomanNumberConverterTest {
         Assert.assertEquals("D", convert(500));
     }
 
+    @Test
+    public void testConverting_1000_to_M() {
+        Assert.assertEquals("M", convert(1000));
+    }
+
 }

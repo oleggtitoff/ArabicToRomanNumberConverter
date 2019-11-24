@@ -12,6 +12,7 @@ class ArabicToRomanNumberConverter {
         romanNumber = new StringBuilder();
 
         digits = new LinkedHashMap<>();
+        digits.put(1000, "M");
         digits.put(500, "D");
         digits.put(100, "C");
         digits.put(90, "XC");
