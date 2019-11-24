@@ -10,9 +10,9 @@ class ArabicToRomanNumberConverter {
 
     ArabicToRomanNumberConverter() {
         romanNumber = new StringBuilder();
-
         digits = new LinkedHashMap<>();
         digits.put(1000, "M");
+        digits.put(900, "CM");
         digits.put(500, "D");
         digits.put(400, "CD");
         digits.put(100, "C");

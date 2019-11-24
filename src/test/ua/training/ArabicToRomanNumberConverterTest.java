@@ -87,6 +87,11 @@ public class ArabicToRomanNumberConverterTest {
     }
 
     @Test
+    public void testConverting_900_to_CM() {
+        Assert.assertEquals("CM", convert(900));
+    }
+
+    @Test
     public void testConverting_1000_to_M() {
         Assert.assertEquals("M", convert(1000));
     }
