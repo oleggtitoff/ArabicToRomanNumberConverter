@@ -51,4 +51,9 @@ public class ArabicToRomanNumberConverterTest {
         Assert.assertEquals("L", convert(50));
     }
 
+    @Test
+    public void testConvetring_100_to_C() {
+        Assert.assertEquals("C", convert(100));
+    }
+
 }
