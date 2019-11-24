@@ -1,12 +1,22 @@
 package ua.training;
 
+import java.lang.StringBuilder;
+
 class ArabicToRomanNumberConverter {
+    private StringBuilder romanNumber;
+
+    ArabicToRomanNumberConverter() {
+        romanNumber = new StringBuilder();
+    }
 
     String convert(int arabicNumber) {
         if (isNotZero(arabicNumber)) {
-            return "I";
+            while (arabicNumber > 0) {
+                romanNumber.append("I");
+                arabicNumber--;
+            }
         }
-        return "";
+        return romanNumber.toString();
     }
 
     private boolean isNotZero(int number) {
