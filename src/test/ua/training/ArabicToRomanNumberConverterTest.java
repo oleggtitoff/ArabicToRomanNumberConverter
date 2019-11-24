@@ -41,4 +41,9 @@ public class ArabicToRomanNumberConverterTest {
         Assert.assertEquals("V", convert(5));
     }
 
+    @Test
+    public void testConverting_10_to_X() {
+        Assert.assertEquals("X", convert(10));
+    }
+
 }
